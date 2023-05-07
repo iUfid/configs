@@ -28,6 +28,7 @@ return packer.startup(function(use)
 
     -- colorschemes
     use("rafi/awesome-vim-colorschemes")
+    use("bluz71/vim-nightfly-guicolors")
 
     -- file explorer
     use("nvim-tree/nvim-tree.lua")
@@ -47,6 +48,15 @@ return packer.startup(function(use)
     use("saadparwaiz1/cmp_luasnip") -- for autocompletion
     use("rafamadriz/friendly-snippets") -- useful snippets
 
+    -- managing & installing lsp servers, linters & formatters
+    use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
+    use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
+
+    -- configuring lsp servers
+    use("neovim/nvim-lspconfig") -- easily configure language servers
+    use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
+    use({"glepnir/lspsaga.nvim", branch = "main"})
+    use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
 
     if packer_bootstrap then

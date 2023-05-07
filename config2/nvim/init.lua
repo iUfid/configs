@@ -5,4 +5,7 @@ require("ufid.core.colorscheme")
 require("ufid.plugins.nvim-tree")
 require("ufid.plugins.lualine")
 require("ufid.plugins.nvim-cmp")
+require("ufid.plugins.lsp.mason")
+require("ufid.plugins.lsp.lspsaga")
+require("ufid.plugins.lsp.lspconfig")
 

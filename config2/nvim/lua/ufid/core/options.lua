@@ -18,7 +18,7 @@ opt.ignorecase = true
 opt.smartcase = true
 
 -- appearance
-opt.termguicolors = false
+opt.termguicolors = true
 opt.background = "dark"
 opt.signcolumn = "yes"
 
