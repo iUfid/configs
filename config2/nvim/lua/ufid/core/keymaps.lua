@@ -4,7 +4,7 @@ local keymap = vim.keymap -- for conciseness
 
 -- general keymaps
 
-keymap.set("i", "jk", "<ESC>") -- ESC on jk
+-- keymap.set("i", "jk", "<ESC>") -- ESC on jk
 keymap.set("n", "<leader>,", ":nohl<CR>") -- hide highlights on space + ,
 
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
